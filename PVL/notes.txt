@@ -1,0 +1,19 @@
+https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00898/full
+
+a utility function:
+
+u_k(t) = [x(t)]^a if x(t)>0 and -w|x(t)|^a otherwise
+
+where x(t) is the reward of the trial and k was the chosen lever
+
+e_k(t) = e_k(t-1)+a[u_k(t)-e_k(t)]
+
+e_k is the expected utility for the kth lever, this is updated by its
+difference from the actual utility.
+
+p(k) = exp(theta e_k) / bigZ
+
+where bigZ = sum exp(theta e_k)
+
+and theta is parameterized by c with theta = 3^c-1
+

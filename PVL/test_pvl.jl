@@ -3,7 +3,7 @@
 include("pvl.jl")
 
 a=0.1::Float64
-w=-2.0::Float64
+w=2.0::Float64
 η=0.1::Float64
 c=2.0::Float64
 
